@@ -98,8 +98,8 @@ body {
 	background-color: #55f;
 }
 
-@media (max-width: 450px){
-	:root{
+@media (max-width: 450px) {
+	:root {
 		font-size: 12px;
 	}
 
@@ -113,5 +113,13 @@ body {
 	.calculator__display {
 		max-height: 20%;
 		font-size: 3rem;
+	}
+
+	.calculator__button {
+		padding: .5em;
+	}
+
+	.calculator__button svg {
+		height: 2rem;
 	}
 }
