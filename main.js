@@ -51,17 +51,17 @@ function clearDisplay() {
 function deleteChar() {
 	display.value = display.value.slice(0, -1);
 	expression = expression.slice(0, -1) ?? "";
-}
+}	
 
 function getResult() {
 	let result;
 
 	try {
-		result = eval(expression) ?? "ERROR";
+		result = eval(expression) || "ERROR";
 	} catch {
 		result = "ERROR";
 	}
 
 	display.value = String(result);
-	expression = result === "ERROR" ? "" : String(result);
+	expression = (result === "ERROR") ? "" : String(result);
 }

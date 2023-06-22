@@ -103,12 +103,11 @@ body {
 		width: 100%;
 		height: 100%;
 		border-radius: 0;
-		grid-template-rows: 1fr auto;
+		grid-template-rows: auto auto;
 	}
 
 	.calculator__display {
 		max-height: 20%;
-		font-size: 5rem;
+		font-size: 3rem;
 	}
-
 }
